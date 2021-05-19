@@ -7,7 +7,7 @@
  * This source file is subject to the MIT license that is bundled.
  */
 
-namespace Guanguans\EiiFoundation\Helper;
+namespace Guanguans\EiiFoundation\Helpers;
 
 /**
  * Arrayable is the interface that should be implemented by classes who want to support customizable representation of their instances.

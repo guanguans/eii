@@ -12,6 +12,7 @@ namespace Guanguans\EiiFoundation;
 use Eii;
 use Guanguans\EiiFoundation\Di\Container;
 use Guanguans\EiiFoundation\Di\ServiceLocator;
+use Guanguans\EiiFoundation\Exception\InvalidConfigException;
 
 class Application extends ServiceLocator
 {

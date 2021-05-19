@@ -9,7 +9,7 @@
 
 namespace Guanguans\EiiFoundation;
 
-use Guanguans\EiiFoundation\Helper\StringHelper;
+use Guanguans\EiiFoundation\Helpers\StringHelper;
 
 /**
  * Event is the base class for all event classes.

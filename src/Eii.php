@@ -87,7 +87,7 @@ class Eii
      *
      * @throws InvalidConfigException if the configuration is invalid
      *
-     * @see \yii\di\Container
+     * @see Container
      */
     public static function createObject($type, array $params = [])
     {

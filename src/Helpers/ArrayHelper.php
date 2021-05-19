@@ -7,7 +7,7 @@
  * This source file is subject to the MIT license that is bundled.
  */
 
-namespace Guanguans\EiiFoundation\Helper;
+namespace Guanguans\EiiFoundation\Helpers;
 
 use ArrayAccess;
 use Eii;

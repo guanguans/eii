@@ -12,7 +12,7 @@ namespace Guanguans\EiiFoundation\Di;
 use Eii;
 use Guanguans\EiiFoundation\Component;
 use Guanguans\EiiFoundation\Exception\InvalidConfigException;
-use Guanguans\EiiFoundation\Helper\ArrayHelper;
+use Guanguans\EiiFoundation\Helpers\ArrayHelper;
 use ReflectionClass;
 
 /**

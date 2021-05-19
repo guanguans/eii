@@ -10,7 +10,10 @@
 namespace Guanguans\EiiFoundation;
 
 use Eii;
-use Guanguans\EiiFoundation\Helper\StringHelper;
+use Guanguans\EiiFoundation\Exception\InvalidCallException;
+use Guanguans\EiiFoundation\Exception\UnknownMethodException;
+use Guanguans\EiiFoundation\Exception\UnknownPropertyException;
+use Guanguans\EiiFoundation\Helpers\StringHelper;
 
 /**
  * Component is the base class that implements the *property*, *event* and *behavior* features.
