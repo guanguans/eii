@@ -800,7 +800,8 @@ class Component extends BaseObject
      *                                        will be detached first.
      * @param string|array|Behavior $behavior the behavior to be attached
      *
-     * @return Behavior the attached behavior
+     * @return \Guanguans\EiiFoundation\Behavior|object the attached behavior
+     * @throws \Guanguans\EiiFoundation\Exception\InvalidConfigException
      */
     private function attachBehaviorInternal($name, $behavior)
     {
