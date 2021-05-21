@@ -8,14 +8,19 @@ define('YII_DEBUG', true);
 
 require __DIR__ . '/../vendor/autoload.php';
 
-// 单独示例
 $exampleComponent = new ExampleComponent();
-$exampleComponent->behaviorMethod();
-$exampleComponent->trigger(ExampleEvent::EXAMPLE_EVENT_NAME);
-var_dump($exampleComponent->behaviorName);
-var_dump($exampleComponent->componentName);
 
-// 整合示例
+// 组件调用所拥有行为的属性示例
+var_dump($exampleComponent->behaviorName);
+
+// 组件调用所拥有行为的方法示例
+$exampleComponent->behaviorMethod();
+
+// 组件触发事件示例
+$exampleComponent->trigger(ExampleEvent::EXAMPLE_EVENT_NAME);
+
+// 整体示例
+var_dump($exampleComponent->componentName);
 $config = require __DIR__ . '/config.php';
 $application = new Application($config);
 // var_dump(Eii::$app);
