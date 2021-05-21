@@ -7,8 +7,6 @@ use Guanguans\EiiFoundation\Helpers\ArrayHelper;
 
 /**
  * Class ExampleComponent.
- *
- * @method behaviorMethod
  */
 class ExampleComponent extends Component
 {
