@@ -2,7 +2,7 @@
 
 [简体中文](README-CN.md) | [ENGLISH](README.md)
 
-> 一个 PHP 软件包模板存储库。- A PHP package template repository.
+> Core component package separated from Yii2. - 从 Yii2 分离出来的核心组件包。
 
 [![Tests](https://github.com/guanguans/eii-foundation/workflows/Tests/badge.svg)](https://github.com/guanguans/eii-foundation/actions)
 [![Check & fix styling](https://github.com/guanguans/eii-foundation/workflows/Check%20&%20fix%20styling/badge.svg)](https://github.com/guanguans/eii-foundation/actions)
@@ -18,16 +18,12 @@
 ## 安装
 
 ``` bash
-$ composer require guanguans/eii-foundation --prefer-dist -vvv
+$ composer require guanguans/eii-foundation -vvv
 ```
 
 ## 使用
 
-1. 替换 `guanguans/eii-foundation` -> `vendorName/package-name`
-2. 替换 `Guanguans\\EiiFoundation` -> `VendorName\\PackageName`
-3. 替换 `Guanguans\EiiFoundation` -> `VendorName\PackageName`
-4. 替换 `ityaozm@gmail.com` -> `your email`
-5. 执行 `$ composer dumpautoload`
+> [example](examples/example.php)
 
 ## 测试
 

@@ -2,7 +2,7 @@
 
 [简体中文](README-CN.md) | [ENGLISH](README.md)
 
-> A PHP package template repository. - 一个 PHP 软件包模板存储库。
+> Core component package separated from Yii2. - 从 Yii2 分离出来的核心组件包。
 
 [![Tests](https://github.com/guanguans/eii-foundation/workflows/Tests/badge.svg)](https://github.com/guanguans/eii-foundation/actions)
 [![Check & fix styling](https://github.com/guanguans/eii-foundation/workflows/Check%20&%20fix%20styling/badge.svg)](https://github.com/guanguans/eii-foundation/actions)
@@ -18,14 +18,12 @@
 ## Installation
 
 ``` bash
-$ composer require guanguans/eii-foundation --prefer-dist -vvv
+$ composer require guanguans/eii-foundation -vvv
 ```
 
 ## Usage
 
-``` bash
-todo
-```
+> [example](examples/example.php)
 
 ## Testing
 
