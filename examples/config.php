@@ -3,9 +3,9 @@
 return [
     'name' => 'Eii',
     'components' => [
-        'pay' => [
-            'class' => \Guanguans\EiiFoundation\Examples\Components\Pay::class,
-            'wechat' => 'This is Wechat.',
+        'example' => [
+            'class' => \Guanguans\EiiFoundation\Examples\Components\ExampleComponent::class,
+            'componentName' => 'This is a component name.',
         ],
     ],
 ];
