@@ -255,11 +255,11 @@ class Eii
     public static function createObject($type, array $params = [])
     {
         if (is_string($type)) {
-            return static::$container->get($type, $params);
+            return static::createContainer()->get($type, $params);
         }
 
         if (is_callable($type, true)) {
-            return static::$container->invoke($type, $params);
+            return static::createContainer()->invoke($type, $params);
         }
 
         if (!is_array($type)) {
@@ -270,17 +270,29 @@ class Eii
             $class = $type['__class'];
             unset($type['__class'], $type['class']);
 
-            return static::$container->get($class, $params, $type);
+            return static::createContainer()->get($class, $params, $type);
         }
 
         if (isset($type['class'])) {
             $class = $type['class'];
             unset($type['class']);
 
-            return static::$container->get($class, $params, $type);
+            return static::createContainer()->get($class, $params, $type);
         }
 
         throw new InvalidConfigException('Object configuration must be an array containing a "class" or "__class" element.');
+    }
+
+    /**
+     * @return \Guanguans\EiiFoundation\Di\Container
+     */
+    public static function createContainer()
+    {
+        if (!static::$container instanceof Container) {
+            static::$container = new Container();
+        }
+
+        return static::$container;
     }
 
     /**

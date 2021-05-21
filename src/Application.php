@@ -19,7 +19,7 @@ class Application extends ServiceLocator
     /**
      * @var string the application name
      */
-    public $name = 'My Application';
+    public $name = 'Eii';
 
     /**
      * Constructor.
