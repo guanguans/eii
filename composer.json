@@ -1,6 +1,6 @@
 {
     "name": "guanguans/eii-foundation",
-    "description": "Core component package separated from Yii2. - 从 Yii2 分离出来的核心组件包。",
+    "description": "Core component separated from Yii2. - 从 Yii2 分离出来的核心组件。",
     "keywords": [
         "yii2",
         "yii",

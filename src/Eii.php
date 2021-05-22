@@ -9,12 +9,6 @@
 
 namespace Guanguans\EiiFoundation;
 
-/*
- * @link http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
- */
-
 use Guanguans\EiiFoundation\Di\Container;
 use Guanguans\EiiFoundation\Exception\InvalidArgumentException;
 use Guanguans\EiiFoundation\Exception\InvalidConfigException;
