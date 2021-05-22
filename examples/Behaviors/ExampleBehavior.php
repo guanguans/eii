@@ -1,9 +1,9 @@
 <?php
 
-namespace Guanguans\EiiFoundation\Examples\Behaviors;
+namespace Guanguans\Eii\Examples\Behaviors;
 
-use Guanguans\EiiFoundation\Behavior;
-use Guanguans\EiiFoundation\Examples\Events\ExampleEvent;
+use Guanguans\Eii\Behavior;
+use Guanguans\Eii\Examples\Events\ExampleEvent;
 
 class ExampleBehavior extends Behavior
 {

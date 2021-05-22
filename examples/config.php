@@ -4,7 +4,7 @@ return [
     'name' => 'Eii',
     'components' => [
         'example' => [
-            'class' => \Guanguans\EiiFoundation\Examples\Components\ExampleComponent::class,
+            'class' => \Guanguans\Eii\Examples\Components\ExampleComponent::class,
             'componentName' => 'This is a component name.',
         ],
     ],

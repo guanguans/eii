@@ -1,8 +1,8 @@
 <?php
 
-use Guanguans\EiiFoundation\Application;
-use Guanguans\EiiFoundation\Examples\Components\ExampleComponent;
-use Guanguans\EiiFoundation\Examples\Events\ExampleEvent;
+use Guanguans\Eii\Application;
+use Guanguans\Eii\Examples\Components\ExampleComponent;
+use Guanguans\Eii\Examples\Events\ExampleEvent;
 
 define('YII_DEBUG', true);
 

@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace Guanguans\EiiFoundation\Helpers;
+namespace Guanguans\Eii\Helpers;
 
 /**
  * Object that represents the removal of array value while performing [[ArrayHelper::merge()]].

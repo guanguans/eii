@@ -2,14 +2,14 @@
 
 [简体中文](README-CN.md) | [ENGLISH](README.md)
 
-> Core component package separated from Yii2. - 从 Yii2 分离出来的核心组件包。
+> Core component separated from Yii2. - 从 Yii2 分离出来的核心组件。
 
-[![Tests](https://github.com/guanguans/eii-foundation/workflows/Tests/badge.svg)](https://github.com/guanguans/eii-foundation/actions)
-[![Check & fix styling](https://github.com/guanguans/eii-foundation/workflows/Check%20&%20fix%20styling/badge.svg)](https://github.com/guanguans/eii-foundation/actions)
-[![codecov](https://codecov.io/gh/guanguans/eii-foundation/branch/main/graph/badge.svg?token=URGFAWS6S4)](https://codecov.io/gh/guanguans/eii-foundation)
-[![Latest Stable Version](https://poser.pugx.org/guanguans/eii-foundation/v)](//packagist.org/packages/guanguans/eii-foundation)
-[![Total Downloads](https://poser.pugx.org/guanguans/eii-foundation/downloads)](//packagist.org/packages/guanguans/eii-foundation)
-[![License](https://poser.pugx.org/guanguans/eii-foundation/license)](//packagist.org/packages/guanguans/eii-foundation)
+[![Tests](https://github.com/guanguans/eii/workflows/Tests/badge.svg)](https://github.com/guanguans/eii/actions)
+[![Check & fix styling](https://github.com/guanguans/eii/workflows/Check%20&%20fix%20styling/badge.svg)](https://github.com/guanguans/eii/actions)
+[![codecov](https://codecov.io/gh/guanguans/eii/branch/main/graph/badge.svg?token=URGFAWS6S4)](https://codecov.io/gh/guanguans/eii)
+[![Latest Stable Version](https://poser.pugx.org/guanguans/eii/v)](//packagist.org/packages/guanguans/eii)
+[![Total Downloads](https://poser.pugx.org/guanguans/eii/downloads)](//packagist.org/packages/guanguans/eii)
+[![License](https://poser.pugx.org/guanguans/eii/license)](//packagist.org/packages/guanguans/eii)
 
 ## Requirement
 
@@ -18,7 +18,7 @@
 ## Installation
 
 ``` bash
-$ composer require guanguans/eii-foundation -vvv
+$ composer require guanguans/eii -vvv
 ```
 
 ## Usage

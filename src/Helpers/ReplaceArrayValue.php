@@ -5,9 +5,9 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace Guanguans\EiiFoundation\Helpers;
+namespace Guanguans\Eii\Helpers;
 
-use Guanguans\EiiFoundation\Exception\InvalidConfigException;
+use Guanguans\Eii\Exception\InvalidConfigException;
 
 /**
  * Object that represents the replacement of array value while performing [[ArrayHelper::merge()]].

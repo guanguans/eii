@@ -1,15 +1,15 @@
 <?php
 
 /**
- * This file is part of the guanguans/eii-foundation.
+ * This file is part of the guanguans/eii.
  * This file is modified from https://github.com/yiisoft/yii2
  * (c) guanguans <ityaozm@gmail.com>
  * This source file is subject to the MIT license that is bundled.
  */
 
-namespace Guanguans\EiiFoundation;
+namespace Guanguans\Eii;
 
-use Guanguans\EiiFoundation\Helpers\StringHelper;
+use Guanguans\Eii\Helpers\StringHelper;
 
 /**
  * Event is the base class for all event classes.

@@ -1,17 +1,17 @@
 <?php
 
 /**
- * This file is part of the guanguans/eii-foundation.
+ * This file is part of the guanguans/eii.
  * This file is modified from https://github.com/yiisoft/yii2
  * (c) guanguans <ityaozm@gmail.com>
  * This source file is subject to the MIT license that is bundled.
  */
 
-namespace Guanguans\EiiFoundation\Helpers;
+namespace Guanguans\Eii\Helpers;
 
 use ArrayAccess;
 use Eii;
-use Guanguans\EiiFoundation\Exception\InvalidArgumentException;
+use Guanguans\Eii\Exception\InvalidArgumentException;
 use Traversable;
 
 /**

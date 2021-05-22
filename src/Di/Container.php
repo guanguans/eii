@@ -1,18 +1,18 @@
 <?php
 
 /**
- * This file is part of the guanguans/eii-foundation.
+ * This file is part of the guanguans/eii.
  * This file is modified from https://github.com/yiisoft/yii2
  * (c) guanguans <ityaozm@gmail.com>
  * This source file is subject to the MIT license that is bundled.
  */
 
-namespace Guanguans\EiiFoundation\Di;
+namespace Guanguans\Eii\Di;
 
 use Eii;
-use Guanguans\EiiFoundation\Component;
-use Guanguans\EiiFoundation\Exception\InvalidConfigException;
-use Guanguans\EiiFoundation\Helpers\ArrayHelper;
+use Guanguans\Eii\Component;
+use Guanguans\Eii\Exception\InvalidConfigException;
+use Guanguans\Eii\Helpers\ArrayHelper;
 use ReflectionClass;
 
 /**
@@ -427,7 +427,7 @@ class Container extends Component
 
         $config = $this->resolveDependencies($config);
 
-        if (!empty($dependencies) && $reflection->implementsInterface('Guanguans\EiiFoundation\Configurable')) {
+        if (!empty($dependencies) && $reflection->implementsInterface('Guanguans\Eii\Configurable')) {
             // set $config as the last parameter (existing one will be overwritten)
             $dependencies[count($dependencies) - 1] = $config;
 

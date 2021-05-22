@@ -1,18 +1,18 @@
 <?php
 
 /**
- * This file is part of the guanguans/eii-foundation.
+ * This file is part of the guanguans/eii.
  * This file is modified from https://github.com/yiisoft/yii2
  * (c) guanguans <ityaozm@gmail.com>
  * This source file is subject to the MIT license that is bundled.
  */
 
-namespace Guanguans\EiiFoundation;
+namespace Guanguans\Eii;
 
 use Eii;
-use Guanguans\EiiFoundation\Di\Container;
-use Guanguans\EiiFoundation\Di\ServiceLocator;
-use Guanguans\EiiFoundation\Exception\InvalidConfigException;
+use Guanguans\Eii\Di\Container;
+use Guanguans\Eii\Di\ServiceLocator;
+use Guanguans\Eii\Exception\InvalidConfigException;
 
 class Application extends ServiceLocator
 {

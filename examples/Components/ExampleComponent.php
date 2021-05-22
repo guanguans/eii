@@ -1,9 +1,9 @@
 <?php
 
-namespace Guanguans\EiiFoundation\Examples\Components;
+namespace Guanguans\Eii\Examples\Components;
 
-use Guanguans\EiiFoundation\Component;
-use Guanguans\EiiFoundation\Helpers\ArrayHelper;
+use Guanguans\Eii\Component;
+use Guanguans\Eii\Helpers\ArrayHelper;
 
 /**
  * Class ExampleComponent.
@@ -17,8 +17,8 @@ class ExampleComponent extends Component
     {
         return ArrayHelper::merge(parent::behaviors(), [
             'example' => [
-                'class' => \Guanguans\EiiFoundation\Examples\Behaviors\ExampleBehavior::class,
-                'behaviorName' => \Guanguans\EiiFoundation\Examples\Behaviors\ExampleBehavior::class,
+                'class' => \Guanguans\Eii\Examples\Behaviors\ExampleBehavior::class,
+                'behaviorName' => \Guanguans\Eii\Examples\Behaviors\ExampleBehavior::class,
             ],
         ]);
     }

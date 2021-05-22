@@ -2,7 +2,7 @@
 
 // /**
 //  * @property MyApplication $app
-//  * @property \Guanguans\EiiFoundation\Di\Container $container
+//  * @property \Guanguans\Eii\Di\Container $container
 //  * @property array $aliases
 //  *
 //  * @method static getAlias($alias, $throwException = true)
@@ -20,13 +20,13 @@
 // }
 //
 // /**
-//  * @property \Guanguans\EiiFoundation\Examples\Components\ExampleComponent $example
+//  * @property \Guanguans\Eii\Examples\Components\ExampleComponent $example
 //  */
 // class MyApplication
 // {
 // }
 
-namespace Guanguans\EiiFoundation\Examples\Components {
+namespace Guanguans\Eii\Examples\Components {
 
     /**
      * @property string $behaviorName

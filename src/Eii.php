@@ -1,17 +1,17 @@
 <?php
 
 /**
- * This file is part of the guanguans/eii-foundation.
+ * This file is part of the guanguans/eii.
  * This file is modified from https://github.com/yiisoft/yii2
  * (c) guanguans <ityaozm@gmail.com>
  * This source file is subject to the MIT license that is bundled.
  */
 
-namespace Guanguans\EiiFoundation;
+namespace Guanguans\Eii;
 
-use Guanguans\EiiFoundation\Di\Container;
-use Guanguans\EiiFoundation\Exception\InvalidArgumentException;
-use Guanguans\EiiFoundation\Exception\InvalidConfigException;
+use Guanguans\Eii\Di\Container;
+use Guanguans\Eii\Exception\InvalidArgumentException;
+use Guanguans\Eii\Exception\InvalidConfigException;
 
 /**
  * BaseYii is the core helper class for the Yii framework.
@@ -26,7 +26,7 @@ use Guanguans\EiiFoundation\Exception\InvalidConfigException;
 class Eii
 {
     /**
-     * @var \Guanguans\EiiFoundation\Application the application instance
+     * @var \Guanguans\Eii\Application the application instance
      */
     public static $app;
 
@@ -278,7 +278,7 @@ class Eii
     }
 
     /**
-     * @return \Guanguans\EiiFoundation\Di\Container
+     * @return \Guanguans\Eii\Di\Container
      */
     public static function createContainer()
     {

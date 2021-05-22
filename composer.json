@@ -1,5 +1,5 @@
 {
-    "name": "guanguans/eii-foundation",
+    "name": "guanguans/eii",
     "description": "Core component separated from Yii2. - 从 Yii2 分离出来的核心组件。",
     "keywords": [
         "yii2",
@@ -8,10 +8,10 @@
         "component",
         "foundation"
     ],
-    "homepage": "https://github.com/guanguans/eii-foundation",
+    "homepage": "https://github.com/guanguans/eii",
     "support": {
-        "issues": "https://github.com/guanguans/eii-foundation/issues",
-        "source": "https://github.com/guanguans/eii-foundation"
+        "issues": "https://github.com/guanguans/eii/issues",
+        "source": "https://github.com/guanguans/eii"
     },
     "authors": [
         {
@@ -38,8 +38,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Guanguans\\EiiFoundation\\": "src",
-            "Guanguans\\EiiFoundation\\Examples\\": "examples"
+            "Guanguans\\Eii\\": "src",
+            "Guanguans\\Eii\\Examples\\": "examples"
         },
         "files": [
             "src/alias.php"
@@ -47,7 +47,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Guanguans\\EiiFoundation\\Tests\\": "tests"
+            "Guanguans\\Eii\\Tests\\": "tests"
         }
     },
     "config": {

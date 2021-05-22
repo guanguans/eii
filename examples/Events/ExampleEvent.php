@@ -1,8 +1,8 @@
 <?php
 
-namespace Guanguans\EiiFoundation\Examples\Events;
+namespace Guanguans\Eii\Examples\Events;
 
-use Guanguans\EiiFoundation\Event;
+use Guanguans\Eii\Event;
 
 class ExampleEvent extends Event
 {
