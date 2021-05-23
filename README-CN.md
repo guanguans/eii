@@ -1,4 +1,4 @@
-# package-skeleton
+# eii
 
 [简体中文](README-CN.md) | [ENGLISH](README.md)
 
