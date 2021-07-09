@@ -17,7 +17,7 @@ class ExampleComponent extends Component
     {
         return ArrayHelper::merge(parent::behaviors(), [
             'example' => [
-                'class'        => \Guanguans\Eii\Examples\Behaviors\ExampleBehavior::class,
+                'class' => \Guanguans\Eii\Examples\Behaviors\ExampleBehavior::class,
                 'behaviorName' => \Guanguans\Eii\Examples\Behaviors\ExampleBehavior::class,
             ],
         ]);

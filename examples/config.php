@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'name'       => 'Eii',
+    'name' => 'Eii',
     'components' => [
         'example' => [
-            'class'         => \Guanguans\Eii\Examples\Components\ExampleComponent::class,
+            'class' => \Guanguans\Eii\Examples\Components\ExampleComponent::class,
             'componentName' => 'This is a component name.',
         ],
     ],

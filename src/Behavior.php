@@ -98,7 +98,7 @@ class Behavior extends BaseObject
                 $this->owner->off($event, is_string($handler) ? [$this, $handler] : $handler);
             }
             $this->_attachedEvents = [];
-            $this->owner           = null;
+            $this->owner = null;
         }
     }
 }

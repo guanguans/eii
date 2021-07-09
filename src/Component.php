@@ -333,9 +333,9 @@ class Component extends BaseObject
      */
     public function __clone()
     {
-        $this->_events         = [];
+        $this->_events = [];
         $this->_eventWildcards = [];
-        $this->_behaviors      = null;
+        $this->_behaviors = null;
     }
 
     /**
@@ -664,7 +664,7 @@ class Component extends BaseObject
                 $event->sender = $this;
             }
             $event->handled = false;
-            $event->name    = $name;
+            $event->name = $name;
             foreach ($eventHandlers as $handler) {
                 $event->data = $handler[1];
                 call_user_func($handler[0], $event);

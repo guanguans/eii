@@ -205,7 +205,7 @@ class Event extends BaseObject
      */
     public static function offAll()
     {
-        self::$_events         = [];
+        self::$_events = [];
         self::$_eventWildcards = [];
     }
 
@@ -291,7 +291,7 @@ class Event extends BaseObject
             $event = new static();
         }
         $event->handled = false;
-        $event->name    = $name;
+        $event->name = $name;
 
         if (is_object($class)) {
             if (null === $event->sender) {

@@ -21,7 +21,7 @@ $exampleComponent->trigger(ExampleEvent::EXAMPLE_EVENT_NAME);
 
 // 整体示例
 var_dump($exampleComponent->componentName);
-$config      = require __DIR__ . '/config.php';
+$config = require __DIR__ . '/config.php';
 $application = new Application($config);
 // var_dump(Eii::$app);
 var_dump(Eii::$app->example->componentName);
