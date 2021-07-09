@@ -124,7 +124,7 @@ class ArrayHelper
     public static function merge($a, $b)
     {
         $args = func_get_args();
-        $res = array_shift($args);
+        $res  = array_shift($args);
         while (!empty($args)) {
             foreach (array_shift($args) as $k => $v) {
                 if ($v instanceof UnsetArrayValue) {
@@ -208,7 +208,7 @@ class ArrayHelper
 
         if (($pos = strrpos($key, '.')) !== false) {
             $array = static::getValue($array, substr($key, 0, $pos), $default);
-            $key = substr($key, $pos + 1);
+            $key   = substr($key, $pos + 1);
         }
 
         if (static::keyExists($key, $array)) {
@@ -600,7 +600,7 @@ class ArrayHelper
     {
         $result = [];
         foreach ($array as $element) {
-            $key = static::getValue($element, $from);
+            $key   = static::getValue($element, $from);
             $value = static::getValue($element, $to);
             if (null !== $group) {
                 $result[static::getValue($element, $group)][$key] = $value;
@@ -685,7 +685,7 @@ class ArrayHelper
         }
         $args = [];
         foreach ($keys as $i => $k) {
-            $flag = $sortFlag[$i];
+            $flag   = $sortFlag[$i];
             $args[] = static::getColumn($array, $k);
             $args[] = $direction[$i];
             $args[] = $flag;
@@ -979,7 +979,7 @@ class ArrayHelper
      */
     public static function filter($array, $filters)
     {
-        $result = [];
+        $result         = [];
         $excludeFilters = [];
 
         foreach ($filters as $filter) {
@@ -989,7 +989,7 @@ class ArrayHelper
             }
 
             $nodeValue = $array; //set $array as root node
-            $keys = explode('.', $filter);
+            $keys      = explode('.', $filter);
             foreach ($keys as $key) {
                 if (!array_key_exists($key, $nodeValue)) {
                     continue 2; //Jump to next filter
@@ -1009,8 +1009,8 @@ class ArrayHelper
         }
 
         foreach ($excludeFilters as $filter) {
-            $excludeNode = &$result;
-            $keys = explode('.', $filter);
+            $excludeNode   = &$result;
+            $keys          = explode('.', $filter);
             $numNestedKeys = count($keys) - 1;
             foreach ($keys as $i => $key) {
                 if (!array_key_exists($key, $excludeNode)) {

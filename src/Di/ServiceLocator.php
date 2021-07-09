@@ -213,7 +213,7 @@ class ServiceLocator extends Component
         } elseif (is_array($definition)) {
             // a configuration array
             if (isset($definition['__class'])) {
-                $this->_definitions[$id] = $definition;
+                $this->_definitions[$id]          = $definition;
                 $this->_definitions[$id]['class'] = $definition['__class'];
                 unset($this->_definitions[$id]['__class']);
             } elseif (isset($definition['class'])) {

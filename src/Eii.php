@@ -86,7 +86,7 @@ class Eii
             return $alias;
         }
 
-        $pos = strpos($alias, '/');
+        $pos  = strpos($alias, '/');
         $root = $pos === false ? $alias : substr($alias, 0, $pos);
 
         if (isset(static::$aliases[$root])) {
@@ -117,7 +117,7 @@ class Eii
      */
     public static function getRootAlias($alias)
     {
-        $pos = strpos($alias, '/');
+        $pos  = strpos($alias, '/');
         $root = $pos === false ? $alias : substr($alias, 0, $pos);
 
         if (isset(static::$aliases[$root])) {
@@ -170,7 +170,7 @@ class Eii
         if (strncmp($alias, '@', 1)) {
             $alias = '@' . $alias;
         }
-        $pos = strpos($alias, '/');
+        $pos  = strpos($alias, '/');
         $root = $pos === false ? $alias : substr($alias, 0, $pos);
         if ($path !== null) {
             $path = strncmp($path, '@', 1) ? rtrim($path, '\\/') : static::getAlias($path);
@@ -186,7 +186,7 @@ class Eii
                 } else {
                     static::$aliases[$root] = [
                         $alias => $path,
-                        $root => static::$aliases[$root],
+                        $root  => static::$aliases[$root],
                     ];
                 }
             } else {

@@ -51,7 +51,7 @@ class ErrorException extends \ErrorException
             // XDebug trace can't be modified and used directly with PHP 7
             // @see https://github.com/yiisoft/yii2/pull/11723
             $xDebugTrace = array_slice(array_reverse(xdebug_get_function_stack()), 1, -1);
-            $trace = [];
+            $trace       = [];
             foreach ($xDebugTrace as $frame) {
                 if (!isset($frame['function'])) {
                     $frame['function'] = 'unknown';
@@ -95,21 +95,21 @@ class ErrorException extends \ErrorException
     public function getName()
     {
         static $names = [
-            E_COMPILE_ERROR => 'PHP Compile Error',
-            E_COMPILE_WARNING => 'PHP Compile Warning',
-            E_CORE_ERROR => 'PHP Core Error',
-            E_CORE_WARNING => 'PHP Core Warning',
-            E_DEPRECATED => 'PHP Deprecated Warning',
-            E_ERROR => 'PHP Fatal Error',
-            E_NOTICE => 'PHP Notice',
-            E_PARSE => 'PHP Parse Error',
-            E_RECOVERABLE_ERROR => 'PHP Recoverable Error',
-            E_STRICT => 'PHP Strict Warning',
-            E_USER_DEPRECATED => 'PHP User Deprecated Warning',
-            E_USER_ERROR => 'PHP User Error',
-            E_USER_NOTICE => 'PHP User Notice',
-            E_USER_WARNING => 'PHP User Warning',
-            E_WARNING => 'PHP Warning',
+            E_COMPILE_ERROR          => 'PHP Compile Error',
+            E_COMPILE_WARNING        => 'PHP Compile Warning',
+            E_CORE_ERROR             => 'PHP Core Error',
+            E_CORE_WARNING           => 'PHP Core Warning',
+            E_DEPRECATED             => 'PHP Deprecated Warning',
+            E_ERROR                  => 'PHP Fatal Error',
+            E_NOTICE                 => 'PHP Notice',
+            E_PARSE                  => 'PHP Parse Error',
+            E_RECOVERABLE_ERROR      => 'PHP Recoverable Error',
+            E_STRICT                 => 'PHP Strict Warning',
+            E_USER_DEPRECATED        => 'PHP User Deprecated Warning',
+            E_USER_ERROR             => 'PHP User Error',
+            E_USER_NOTICE            => 'PHP User Notice',
+            E_USER_WARNING           => 'PHP User Warning',
+            E_WARNING                => 'PHP Warning',
             self::E_HHVM_FATAL_ERROR => 'HHVM Fatal Error',
         ];
 

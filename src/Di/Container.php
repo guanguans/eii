@@ -271,7 +271,7 @@ class Container extends Component
     public function set($class, $definition = [], array $params = [])
     {
         $this->_definitions[$class] = $this->normalizeDefinition($class, $definition);
-        $this->_params[$class] = $params;
+        $this->_params[$class]      = $params;
         unset($this->_singletons[$class]);
 
         return $this;
@@ -295,8 +295,8 @@ class Container extends Component
     public function setSingleton($class, $definition = [], array $params = [])
     {
         $this->_definitions[$class] = $this->normalizeDefinition($class, $definition);
-        $this->_params[$class] = $params;
-        $this->_singletons[$class] = null;
+        $this->_params[$class]      = $params;
+        $this->_singletons[$class]  = null;
 
         return $this;
     }
@@ -506,7 +506,7 @@ class Container extends Component
             }
         }
 
-        $this->_reflections[$class] = $reflection;
+        $this->_reflections[$class]  = $reflection;
         $this->_dependencies[$class] = $dependencies;
 
         return [$reflection, $dependencies];
@@ -529,7 +529,7 @@ class Container extends Component
                 if (null !== $dependency->id) {
                     $dependencies[$index] = $this->get($dependency->id);
                 } elseif (null !== $reflection) {
-                    $name = $reflection->getConstructor()->getParameters()[$index]->getName();
+                    $name  = $reflection->getConstructor()->getParameters()[$index]->getName();
                     $class = $reflection->getName();
                     throw new InvalidConfigException("Missing required parameter \"$name\" when instantiating \"$class\".");
                 }
