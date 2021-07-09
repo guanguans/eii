@@ -15,6 +15,7 @@ $finder = Symfony\Component\Finder\Finder::create()
     ])
     ->name('*.php')
     ->notName('*.blade.php')
+    ->notName('_ide_helper.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
@@ -27,10 +28,10 @@ return PhpCsFixer\Config::create()
             'commentType' => 'PHPDoc'
         ],
         'array_syntax' => ['syntax' => 'short'],
-        'ordered_imports' => ['sortAlgorithm' => 'alpha'],
+        'ordered_imports' => ['sort_algorithm' => 'alpha'],
         'no_unused_imports' => true,
         'not_operator_with_successor_space' => true,
-        'trailing_comma_in_multiline_array' => true,
+        // 'trailing_comma_in_multiline' => true,
         'no_useless_else' => true,
         'no_useless_return' => true,
         'single_quote' => true,
@@ -126,8 +127,8 @@ return PhpCsFixer\Config::create()
                 //                ],
                 //            ],
                 'ordered_imports' => [
-                    'sortAlgorithm' => 'alpha',
-                    'importsOrder' => [
+                    'sort_algorithm' => 'alpha',
+                    'imports_order' => [
                         'const',
                         'function',
                         'class',
