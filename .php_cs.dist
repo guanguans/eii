@@ -60,9 +60,9 @@ return (new PhpCsFixer\Config())
                 // 'hash_to_slash_comment' => true,
                 'include' => true,
                 'heredoc_to_nowdoc' => true,
-                'is_null' => [
-                    'use_yoda_style' => false,
-                ],
+                // 'is_null' => [
+                //     'use_yoda_style' => false,
+                // ],
                 'linebreak_after_opening_tag' => true,
                 'lowercase_cast' => true,
                 'magic_constant_casing' => true,
