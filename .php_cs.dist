@@ -47,7 +47,7 @@ return (new PhpCsFixer\Config())
                     'syntax' => 'short',
                 ],
                 'binary_operator_spaces' => [
-                    'default' => 'align_single_space_minimal',
+                    'default' => 'single_space',
                 ],
                 'blank_line_after_opening_tag' => true,
                 'cast_spaces' => true,
