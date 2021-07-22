@@ -9,5 +9,6 @@ All notable changes to `guanguans/eii` will be documented in this file.
 ## 1.0.1 - 2021-07-22
 
 * Optimize `createContainer` method for Eii.
+* Optimize `__construct` method for Application.
 * Update src/BaseObject.php.
 * Update php-cs-fixer config file.
