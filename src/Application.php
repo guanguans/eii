@@ -10,7 +10,6 @@
 namespace Guanguans\Eii;
 
 use Eii;
-use Guanguans\Eii\Di\Container;
 use Guanguans\Eii\Di\ServiceLocator;
 use Guanguans\Eii\Exception\InvalidConfigException;
 
@@ -32,8 +31,6 @@ class Application extends ServiceLocator
     public function __construct($config = [])
     {
         Eii::$app = $this;
-
-        Eii::$container = new Container();
 
         $this->preInit($config);
 
