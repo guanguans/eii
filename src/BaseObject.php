@@ -111,7 +111,7 @@ class BaseObject implements Configurable
     public function __construct($config = [])
     {
         if (!empty($config)) {
-            self::configure($this, $config);
+            static::configure($this, $config);
         }
         $this->init();
     }
