@@ -278,12 +278,14 @@ class Eii
     }
 
     /**
+     * @param  array  $config
+     *
      * @return \Guanguans\Eii\Di\Container
      */
-    public static function createContainer()
+    public static function createContainer($config = [])
     {
-        if (!static::$container instanceof Container) {
-            static::$container = new Container();
+        if (!static::$container instanceof Container || $config) {
+            static::$container = new Container($config);
         }
 
         return static::$container;
